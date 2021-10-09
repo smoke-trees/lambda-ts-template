@@ -1,0 +1,60 @@
+{
+    "FunctionName": "",
+    "Runtime": "nodejs14.x",
+    "Role": "",
+    "Handler": "",
+    "Code": {
+        "ZipFile": null,
+        "S3Bucket": "",
+        "S3Key": "",
+        "S3ObjectVersion": "",
+        "ImageUri": ""
+    },
+    "Description": "",
+    "Timeout": 0,
+    "MemorySize": 0,
+    "Publish": true,
+    "VpcConfig": {
+        "SubnetIds": [
+            ""
+        ],
+        "SecurityGroupIds": [
+            ""
+        ]
+    },
+    "PackageType": "Zip",
+    "DeadLetterConfig": {
+        "TargetArn": ""
+    },
+    "Environment": {
+        "Variables": {
+            "KeyName": ""
+        }
+    },
+    "KMSKeyArn": "",
+    "TracingConfig": {
+        "Mode": "Active"
+    },
+    "Tags": {
+        "KeyName": ""
+    },
+    "Layers": [
+        ""
+    ],
+    "FileSystemConfigs": [
+        {
+            "Arn": "",
+            "LocalMountPath": ""
+        }
+    ],
+    "ImageConfig": {
+        "EntryPoint": [
+            ""
+        ],
+        "Command": [
+            ""
+        ],
+        "WorkingDirectory": ""
+    },
+    "CodeSigningConfigArn": ""
+}

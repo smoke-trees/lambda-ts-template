@@ -1,0 +1,27 @@
+{
+    "Configuration": {
+        "FunctionName": "testFunction",
+        "FunctionArn": "arn:aws:lambda:ap-south-1:342664475766:function:testFunction",
+        "Role": "arn:aws:iam::342664475766:role/service-role/testFunction-role-mgk805ql",
+        "CodeSize": 0,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2021-10-09T12:02:14.658+0000",
+        "CodeSha256": "193af1750c6118818ea3cdbc5055628f5f987e2bda2ca378dec70888ca89f15d",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "b9b57aa3-39e5-421f-815c-6b4cc27fe385",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Image",
+        "ImageConfigResponse": {}
+    },
+    "Code": {
+        "RepositoryType": "ECR",
+        "ImageUri": "342664475766.dkr.ecr.ap-south-1.amazonaws.com/test-hello-word@sha256:193af1750c6118818ea3cdbc5055628f5f987e2bda2ca378dec70888ca89f15d",
+        "ResolvedImageUri": "342664475766.dkr.ecr.ap-south-1.amazonaws.com/test-hello-word@sha256:193af1750c6118818ea3cdbc5055628f5f987e2bda2ca378dec70888ca89f15d"
+    }
+}

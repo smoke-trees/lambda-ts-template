@@ -1,0 +1,28 @@
+{
+  "name": "lambda-ts-template",
+  "version": "1.0.0",
+  "description": "Template for creating files in lambda",
+  "main": "index.js",
+  "repositoryHost": "342664475766.dkr.ecr.ap-south-1.amazonaws.com",
+  "repositoryImage": "test-hello-word",
+  "imageTag": "09-10-2021v2",
+  "functionName": "testFunction",
+  "scripts": {
+    "watch": "tsc -w",
+    "compile": "tsc",
+    "build": "node ./scripts/build.js",
+    "push": "node ./scripts/push.js",
+    "update": "node ./scripts/update.js"
+  },
+  "author": "Anshuman Chhapolia",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1004.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "@types/aws-lambda": "^8.10.83",
+    "@types/node": "^16.10.3",
+    "dotenv": "^10.0.0"
+  }
+}

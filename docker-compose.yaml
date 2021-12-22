@@ -1,9 +1,13 @@
 version: '3.9'
 services:
   lambda:
-    build: .
+    build:
+      context: .
+      dockerfile: test.dockerfile
     ports:
       - 9000:8080
+    env_file:
+      - 'test.env'
     volumes:
       - type: bind
         source: ./dist

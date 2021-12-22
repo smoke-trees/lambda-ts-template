@@ -29,7 +29,7 @@ try {
 }
 
 try {
-  cp.execSync(`docker build -t ${repositoryHost}/${repositoryImage}:${imageTag} ${projectPath}`, { stdio: 'inherit' })
+  cp.execSync(`docker build --file build.dockerfile -t ${repositoryHost}/${repositoryImage}:${imageTag} ${projectPath}`, { stdio: 'inherit' })
   console.log(`Successfully built image ${repositoryHost}/${repositoryImage}:${imageTag}`)
 } catch (error) {
   console.log('Error in building image\n', error.message)

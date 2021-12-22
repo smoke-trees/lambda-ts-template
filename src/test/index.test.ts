@@ -1,5 +1,4 @@
-import { handler } from '../index'
-import { APIGatewayProxyEvent } from 'aws-lambda'
+import axios from 'axios'
 
 const event = {
   queryStringParameters: {
@@ -10,6 +9,7 @@ const event = {
   }
 }
 
-handler(event as unknown as APIGatewayProxyEvent)
+axios.post('http://localhost:9000/2015-03-31/functions/function/invocations', event)
+  .then(console.log)
+  .then(console.error)
 
-console.log(event)

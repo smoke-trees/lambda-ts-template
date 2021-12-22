@@ -9,12 +9,14 @@
     "build": "node ./scripts/build.js",
     "push": "node ./scripts/push.js",
     "update": "node ./scripts/update.js",
-    "package": "node ./scripts/package.js"
+    "package": "node ./scripts/package.js",
+    "test": "node ./dist/test/index.test.js"
   },
   "author": "Anshuman Chhapolia",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.1004.0"
+    "aws-sdk": "^2.1004.0",
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.83",

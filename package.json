@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Template for creating files in lambda",
   "main": "index.js",
-  "repositoryHost": "342664475766.dkr.ecr.ap-south-1.amazonaws.com",
-  "repositoryImage": "test-hello-word",
-  "imageTag": "09-10-2021v2",
-  "functionName": "testFunctionFile",
   "scripts": {
     "watch": "tsc -w",
     "compile": "tsc",

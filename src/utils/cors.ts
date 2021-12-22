@@ -177,7 +177,7 @@ function parse(header: string): Array<any> {
 
 function vary(event: APIGatewayProxyEvent, field: string | Array<any>) {
   // get existing header
-  var val = event.headers['Vary'] || event.headers['VARY'] || event.headers['vary'] || ''
+  var val = event.headers?.['Vary'] || event.headers?.['VARY'] || event.headers?.['vary'] || ''
   var header = Array.isArray(val)
     ? val.join(', ')
     : String(val)
@@ -210,7 +210,7 @@ function isOriginAllowed(origin: string, allowedOrigin: string | boolean | RegEx
 }
 
 function configureOrigin(options: CorsOptions, event: APIGatewayProxyEvent) {
-  var requestOrigin = event.headers['origin'] || event.headers['Origin'] || event.headers['ORIGIN'],
+  var requestOrigin = event.headers?.['origin'] || event.headers?.['Origin'] || event.headers?.['ORIGIN'],
     headers = [],
     isAllowed;
 

@@ -1,0 +1,6 @@
+{
+  "repositoryHost": "342664475766.dkr.ecr.ap-south-1.amazonaws.com",
+  "repositoryImage": "test-hello-word",
+  "imageTag": "09-10-2021v2",
+  "functionName": "testFunctionFile"
+}

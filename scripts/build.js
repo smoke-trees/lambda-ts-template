@@ -1,4 +1,4 @@
-const package = require('../package.json')
+const package = require('../function.json')
 const cp = require('child_process')
 const path = require('path')
 

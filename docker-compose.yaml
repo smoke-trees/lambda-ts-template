@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  lambda:
+    build: .
+    ports:
+      - 9000:8080
+    volumes:
+      - type: bind
+        source: ./dist
+        target: /var/task
